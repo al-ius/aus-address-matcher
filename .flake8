@@ -1,0 +1,19 @@
+[flake8]
+application-import-names = src, db, models, utils
+import-order-style = pycharm
+
+exclude =
+    venv,
+    __pycache__,
+    untracked,
+    history,
+    data,
+    graphs,
+
+max-line-length = 99
+
+ignore =
+    # Conflicting with return before else rule.
+    R504,
+    # Binaries should be able to split across lines.
+    W503,

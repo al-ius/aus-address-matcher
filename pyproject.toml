@@ -1,0 +1,45 @@
+[tool.black]
+line-length = 90
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+  | profiling
+)/
+'''
+
+[project]
+name = "aus-address-validator"
+dynamic = ["version"]
+dependencies = [
+    "duckdb",
+    "pylibpostal",
+]
+
+[project.optional-dependencies]
+cli = [
+    "flake8",
+    "flake8-black",
+    "flake8-builtins",
+    "flake8-docstrings",
+    "flake8-import-order",
+    "flake8-plugin-utils",
+    "flake8-return",
+    "flake8-rst-docstrings",
+    "black",
+    "ruff",
+]
