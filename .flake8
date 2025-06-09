@@ -1,14 +1,11 @@
 [flake8]
-application-import-names = src, db, models, utils
+application-import-names = src, common
 import-order-style = pycharm
 
 exclude =
     venv,
     __pycache__,
-    untracked,
-    history,
-    data,
-    graphs,
+    untracked
 
 max-line-length = 99
 

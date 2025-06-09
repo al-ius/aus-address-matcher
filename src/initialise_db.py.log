@@ -1,2 +1,0 @@
-2025-06-09 16:21:22.166 [ERROR] /home/alex/repos/aus-address-validator/src/initialise_db.py :: File 'gnaf.db' already exists, use 'rm gnaf.db' or use a different filename
-2025-06-09 16:21:22.166 [INFO] /home/alex/repos/aus-address-validator/src/initialise_db.py :: Shutting down application

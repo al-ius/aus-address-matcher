@@ -10,7 +10,6 @@ from typing import Any, Dict, Iterable, List, Optional
 
 import duckdb
 from Levenshtein import ratio
-from jaro import original_metric
 
 from common import setup_logging
 
